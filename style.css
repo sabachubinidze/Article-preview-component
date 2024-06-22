@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(210, 46%, 95%);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.img img{
+    height: 300px;
+}
+
+.texsts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 50px;
+}
+
+.person{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-person{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.about-person img{  
+    height: 50px;
+    border-radius: 50%;
+}
+
+.texsts h1{
+    color:  hsl(217, 19%, 35%);
+}
+
+.texsts p{
+    color: hsl(214, 17%, 51%);
+}
+
+.about-person h3{
+    color: hsl(217, 19%, 35%);
+}
+
+.person-img{
+    background-color: hsl(210, 46%, 95%);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.person-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socials{
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    position: fixed;
+    bottom: 300px;
+    display: none;
+}
+
+.socials div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.socials h1{
+    color: hsl(212, 23%, 69%);
+}
+
+.show{
+    display: flex;
+}
+
+@media (max-width: 965px){
+    body{
+        padding: 20px;
+    }
+
+    .container{
+        flex-direction: column;
+        padding: 0 0 20px 0;
+    }
+
+    .texsts h1{
+        font-size: 20px;
+    }
+
+    .img img{
+        width: 600px;
+    }
+
+    .socials{
+        bottom: 160px;
+    }
+}
+
+@media (max-width: 1170px){
+    .socials{
+        right: 50px;
+    }
+}
